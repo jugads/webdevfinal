@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #191919;
+    margin: 0px;
+}
+#head {
+    background-color: rgb(138, 167, 208);
+    width: 100vw;
+    height: 200px;
+}
+#head img {
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+#head h1 {
+    display: inline;
+    font-size: 65px;
+    vertical-align: 50px;
+    margin-left: 50px;
+    color: rgb(6, 0, 128);
+}
+#welcome {
+    text-align: center;
+    color: #7578c6;
+}
+#top-banner {
+    background-color: #1d2193;
+    width: auto;
+    height: 40px;
+}
+#top-banner span {
+    text-align: center;
+    color: white
+}
+.marquee-container {
+    width: 100%;
+    height: auto; /* Or a fixed height if needed */
+    overflow: hidden; /* Hides content outside the container */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.marquee-track {
+    display: inline-block; /* Enables inline-block styling */
+    white-space: nowrap;
+    animation: marquee 80s linear infinite;
+}
+
+.marquee-content {
+    display: inline-block; /* Needed for proper animation */
+    white-space: nowrap;
+    padding-top: 10px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#best-sellers {
+    margin: 25px;
+    margin-top: 50px;
+    background-color: #82bbcb;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+.bestseller-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.bestsellericon {
+    width: 175px;
+    height: 250px;
+    background-color:#ffffff;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+.bestsellericon:hover {
+    cursor: pointer;
+    background-color: #e7e7e7;
+}
+.bestsellericon:hover img {
+    display: none;
+    transition-duration: 0.5s;
+}
+.bestsellericon button {
+    width: 150px;
+    height: 40px;
+    background-color:#b1c7ff;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    display: none;
+    border-width: 1px;
+}
+.bestsellericon:hover button {
+    display: block;
+}
+.bestsellericon button:hover {
+    cursor: pointer;
+}
+.bestsellericon:hover .details {
+    display: block;
+}
+.bestsellericon .details{
+    display: none;
+    font-size: 13px;
+    line-height: 20px;
+}
+.bestsellericon img {
+    width: auto;
+    height: 150px;
+    border-radius: 20%;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.bestsellericon h3 {
+    margin: 0px;
+}
+.stricken {
+    text-decoration: line-through;
+}
+
+#shop-by-country {
+    margin: 25px;
+    margin-top: 50px;
+    background-color: #42496b;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+#shop-by-country #title {
+    font-size: 30px;
+}
+select {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #383838;
+    font-size: 25px;
+    color: #333;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 14px;
+    margin: 10px;
+    vertical-align: 2px;
+}
