@@ -74,7 +74,7 @@ const englandTeams = [
     new Jersey('England', 'Manchester City', 'mci', 'images/mci.png', 'skyblue', 'mancity.com'),
     new Jersey('England', 'Arsenal FC', 'ars', 'images/ars.png', 'red', 'arsenal.com'),
     new Jersey('England', 'Newcastle United', 'new', 'images/new.png', 'black', 'newcastleunited.com'),
-    new Jersey('England', 'Manchester United', 'mu', 'images/mu.png', 'red', 'manutd.com')
+    new Jersey('England', 'Manchester United', 'mun', 'images/mun.png', 'red', 'manutd.com')
 ];
 
 const spainTeams = [
@@ -87,7 +87,7 @@ const spainTeams = [
 
 const franceTeams = [
     new Jersey('France', 'Paris Saint-Germain', 'psg', 'images/psg.png', 'navy', 'psg.fr'),
-    new Jersey('France', 'Olympique Marseille', 'om', 'images/om.png', 'skyblue', 'om.fr'),
+    new Jersey('France', 'Olympique Marseille', 'mar', 'images/mar.png', 'skyblue', 'om.fr'),
     new Jersey('France', 'Olympique Lyonnais', 'lyo', 'images/lyo.png', 'blue', 'ol.fr'),
     new Jersey('France', 'AS Monaco', 'asm', 'images/asm.png', 'red', 'asmonaco.com'),
     new Jersey('France', 'Lille OSC', 'losc', 'images/losc.png', 'red', 'losc.fr')
