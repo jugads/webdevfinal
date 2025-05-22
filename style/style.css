@@ -89,10 +89,14 @@ body {
     text-align: center;
     padding: 5px;
     color: black;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease box-shadow 0.3s ease;
 }
 .bestsellericon:hover {
     cursor: pointer;
     background-color: #e7e7e7;
+    animation: hoverAnimation 0.3s forwards;
 }
 .bestsellericon:hover img {
     display: none;
@@ -125,12 +129,11 @@ body {
     line-height: 20px;
 }
 .bestsellericon img {
-    width: auto;
     height: 150px;
+    width: 150px;
+    object-fit: contain;
     border-radius: 20%;
-    margin: 0px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 .bestsellericon h3 {
     margin: 0px;
@@ -153,12 +156,12 @@ body {
     font-size: 30px;
 }
 select {
-    padding: 10px;
-    border: 2px solid #333;
+    padding: 12px;
+    border: none;
     border-radius: 5px;
-    background-color: #383838;
-    font-size: 25px;
-    color: #333;
+    background-color: #737373;
+    font-size: 20px;
+    color: #ffffff;
     appearance: none;
     background-image: url('data:image/svg+xml;utf8,<svg fill="black" height="14" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
@@ -166,4 +169,73 @@ select {
     background-size: 14px;
     margin: 10px;
     vertical-align: 2px;
+}
+#filter-button {
+    width: 150px;
+    height: 40px;
+    background-color:#b1c7ff;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    color: black;
+    border-width: 1px;
+    vertical-align: 4px;
+}
+#filter-button:hover {
+    background-color: #a4baef;
+    cursor: pointer;
+}
+#page-select {
+    margin: 15px;
+    vertical-align: 60px;
+}
+#navbar {
+    background-color: #2b2b2b;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+li {
+    display: inline;
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+li:hover {
+    background-color:#171717;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    cursor: pointer;
+}
+.addtocart:enabled {
+    animation: pop 0.5s ease;
+}
+
+@keyframes hoverAnimation {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgb(0, 0, 0);
+    }
+    to {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgb(0, 0, 0);
+    }
+}
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
