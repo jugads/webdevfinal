@@ -15,7 +15,7 @@ document.getElementsByClassName('shopnow')[4].addEventListener('click', function
     window.open('https://fcbayern.com')
 });
 if (localStorage.getItem('cart') == null) {
-    localStorage.setItem('')
+    localStorage.setItem('cart', '')
 }
 // Individual "Add to Cart" button listeners (static jerseys in Best Sellers section)
 document.getElementsByClassName('addtocart')[0].addEventListener('click', function() {
