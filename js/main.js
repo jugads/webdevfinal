@@ -167,7 +167,7 @@ function setCard(id, name, abb, color, siteURL) {
     var newCartButton = oldCartButton.cloneNode(true);
     oldCartButton.parentNode.replaceChild(newCartButton, oldCartButton);
     newCartButton.addEventListener('click', function () {
-        var currentCart = localStorage.getItem('cart')==='null' ? '' : localStorage.getItem('cart');
+        var currentCart = localStorage.getItem('cart')===null ? '' : localStorage.getItem('cart');
         console.log(currentCart);
         localStorage.setItem('cart', currentCart + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
         console.log(localStorage.getItem('cart'));
