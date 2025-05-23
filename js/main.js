@@ -17,26 +17,41 @@ document.getElementsByClassName('shopnow')[4].addEventListener('click', function
 
 // Individual "Add to Cart" button listeners (static jerseys in Best Sellers section)
 document.getElementsByClassName('addtocart')[0].addEventListener('click', function() {
+    if (localStorage.getItem('cart') == '') {
+        localStorage.setItem('cart', '')
+    }
     localStorage.setItem('cart', localStorage.getItem('cart') + 'liv-$74.99 ');
     document.getElementsByClassName('addtocart')[0].textContent = "Added to Cart!";
     document.getElementsByClassName('addtocart')[0].style.backgroundColor = "green";
 });
 document.getElementsByClassName('addtocart')[1].addEventListener('click', function() {
+    if (localStorage.getItem('cart') == '') {
+        localStorage.setItem('cart', '')
+    }
     localStorage.setItem('cart', localStorage.getItem('cart') + 'mci-$74.99 ');
     document.getElementsByClassName('addtocart')[1].textContent = "Added to Cart!";
     document.getElementsByClassName('addtocart')[1].style.backgroundColor = "green";
 });
 document.getElementsByClassName('addtocart')[2].addEventListener('click', function() {
+    if (localStorage.getItem('cart') == '') {
+        localStorage.setItem('cart', '')
+    }
     localStorage.setItem('cart', localStorage.getItem('cart') + 'int-$89.99 ');
     document.getElementsByClassName('addtocart')[2].textContent = "Added to Cart!";
     document.getElementsByClassName('addtocart')[2].style.backgroundColor = "green";
 });
 document.getElementsByClassName('addtocart')[3].addEventListener('click', function() {
+    if (localStorage.getItem('cart') == '') {
+        localStorage.setItem('cart', '')
+    }
     localStorage.setItem('cart', localStorage.getItem('cart') + 'rma-$104.99 ');
     document.getElementsByClassName('addtocart')[3].textContent = "Added to Cart!";
     document.getElementsByClassName('addtocart')[3].style.backgroundColor = "green";
 });
 document.getElementsByClassName('addtocart')[4].addEventListener('click', function() {
+    if (localStorage.getItem('cart') == '') {
+        localStorage.setItem('cart', '')
+    }
     localStorage.setItem('cart', localStorage.getItem('cart') + 'bay-$74.99 ');
     document.getElementsByClassName('addtocart')[4].textContent = "Added to Cart!";
     document.getElementsByClassName('addtocart')[4].style.backgroundColor = "green";
