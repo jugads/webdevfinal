@@ -179,3 +179,8 @@ function setCard(id, name, abb, color, siteURL) {
 
 // Automatically populate jerseys on first load
 window.addEventListener('DOMContentLoaded', changeJerseys);
+window.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('cart') == '') {
+        this.localStorage.setItem('cart', '')
+    }
+})
