@@ -167,10 +167,8 @@ function setCard(id, name, abb, color, siteURL) {
     var newCartButton = oldCartButton.cloneNode(true);
     oldCartButton.parentNode.replaceChild(newCartButton, oldCartButton);
     newCartButton.addEventListener('click', function () {
-        if (localStorage.getItem('cart') == '') {
-            localStorage.setItem('cart', '')
-        }
-        localStorage.setItem('cart', localStorage.getItem('cart') + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
+        var currentCart = localStorage.getItem('cart')==='null' ? '' : localStorage.getItem('cart')
+        localStorage.setItem('cart', currentCart + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
         console.log(localStorage.getItem('cart'));
         newCartButton.textContent = "Added to Cart!";
         newCartButton.style.backgroundColor = "green";
