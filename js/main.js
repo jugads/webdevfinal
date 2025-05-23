@@ -90,7 +90,7 @@ const franceTeams = [
     new Jersey('France', 'Olympique Marseille', 'mar', 'images/mar.png', 'skyblue', 'om.fr'),
     new Jersey('France', 'Olympique Lyonnais', 'lyo', 'images/lyo.png', 'blue', 'ol.fr'),
     new Jersey('France', 'AS Monaco', 'asm', 'images/asm.png', 'red', 'asmonaco.com'),
-    new Jersey('France', 'Lille OSC', 'losc', 'images/losc.png', 'red', 'losc.fr')
+    new Jersey('France', 'Lille OSC', 'los', 'images/losc.png', 'red', 'losc.fr')
 ];
 
 const italyTeams = [
