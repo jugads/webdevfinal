@@ -169,7 +169,7 @@ function setCard(id, name, abb, color, siteURL) {
     var newCartButton = oldCartButton.cloneNode(true);
     oldCartButton.parentNode.replaceChild(newCartButton, oldCartButton);
     newCartButton.addEventListener('click', function () {
-        console.log(currentCart);
+        console.log(localStorage.getItem('cart'));
         localStorage.setItem('cart', currentCart + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
         console.log(localStorage.getItem('cart'));
         newCartButton.textContent = "Added to Cart!";
