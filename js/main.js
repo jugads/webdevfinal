@@ -170,7 +170,7 @@ function setCard(id, name, abb, color, siteURL) {
     oldCartButton.parentNode.replaceChild(newCartButton, oldCartButton);
     newCartButton.addEventListener('click', function () {
         console.log(localStorage.getItem('cart'));
-        localStorage.setItem('cart', currentCart + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
+        localStorage.setItem('cart', localStorage.getItem('cart') + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
         console.log(localStorage.getItem('cart'));
         newCartButton.textContent = "Added to Cart!";
         newCartButton.style.backgroundColor = "green";
