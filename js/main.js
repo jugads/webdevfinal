@@ -17,7 +17,6 @@ document.getElementsByClassName('shopnow')[4].addEventListener('click', function
 if (localStorage.getItem('cart') == null) {
     localStorage.setItem('cart', '')
 }
-
 // Individual "Add to Cart" button listeners (static jerseys in Best Sellers section)
 document.getElementsByClassName('addtocart')[0].addEventListener('click', function() {
     if (localStorage.getItem('cart') == '') {
@@ -170,7 +169,8 @@ function setCard(id, name, abb, color, siteURL) {
     var newCartButton = oldCartButton.cloneNode(true);
     oldCartButton.parentNode.replaceChild(newCartButton, oldCartButton);
     newCartButton.addEventListener('click', function () {
-        localStorage.setItem('cart', localStorage.getItem('') + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
+        console.log(currentCart);
+        localStorage.setItem('cart', currentCart + abb + '-' + card.querySelector('.cost').innerHTML + ' ');
         console.log(localStorage.getItem('cart'));
         newCartButton.textContent = "Added to Cart!";
         newCartButton.style.backgroundColor = "green";
