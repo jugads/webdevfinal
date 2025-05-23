@@ -48,7 +48,7 @@ document.getElementById('pricing').appendChild(
     finalCost
 )
 }
-updateCart();
+window.addEventListener('DOMContentLoaded', updateCart)
 document.getElementById("checkout").addEventListener('click', function() {alert('Checkout Successful. Charged $'+totalCost.toString()+'!')})
 document.getElementById('clear-cart').addEventListener('click', function() {
     localStorage.setItem('cart', '')
