@@ -108,7 +108,7 @@ const germanyTeams = [
     new Jersey('Germany', 'Bayer Leverkusen', 'b04', 'images/b04.png', 'red', 'bayer04.de'),
     new Jersey('Germany', 'Eintracht Frankfurt', 'sge', 'images/sge.png', 'black', 'eintracht.de')
 ];
-
+console.log(localStorage.getItem('cart'))
 // Updates the 5 cards in the "Shop by Country" section based on selected country
 function changeJerseys() {
     var country = document.getElementsByTagName('select')[0].value;
