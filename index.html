@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Development</title>
+    <title>jersey.io</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/best-sellers-styles.css">
     <link rel="icon" type="image/x-icon" href="/images/shoplogo.png">
@@ -140,18 +140,13 @@
         <span id="title">Shop By Country</span>
 
         <!-- Dropdown to select country -->
-        <select name="Select Country">
+        <select name="Select Country" onchange="changeJerseys()">
             <option>England</option>
             <option>France</option>
             <option>Italy</option>
             <option>Spain</option>
             <option>Germany</option>
         </select>
-
-        <!-- Filter button to trigger country-based filtering -->
-        <button id="filter-button" onclick="changeJerseys()">
-            Filter
-        </button>
 
         <!-- Filtered product row (initially showing England teams) -->
         <div class="bestseller-row">
